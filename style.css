@@ -42,4 +42,27 @@ body {
     border-radius: 5px;
     margin-top: 1.5rem;
   }
+  /* TOS-style Spinning Shuttle */
+#shuttle-container {
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .shuttle-gif {
+    max-width: 320px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(33, 211, 255, 0.6);
+    transition: transform 0.2s ease-in;
+  }
+  
+  .shuttle-gif:hover {
+    transform: scale(1.05);
+  }
+  
+  .caption {
+    font-size: 0.9rem;
+    color: #a0d7ff;
+    margin-top: 0.4rem;
+    font-style: italic;
+  }
   
