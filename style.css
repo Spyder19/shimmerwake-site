@@ -1,0 +1,67 @@
+/* General Body Styling */
+body {
+  background-color: #0c1017;
+  color: #dff6ff;
+  font-family: 'Courier New', monospace;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #7df9ff;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+/* Logs and Entries */
+.log-entry, .entry, .log {
+  background-color: #1A1F29;
+  border-left: 5px solid #44FFE9;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+/* Timestamps and Notes */
+.timestamp {
+  font-size: 0.85em;
+  color: #7ba6b3;
+  margin-bottom: 5px;
+}
+
+/* Speaker Voice Styles */
+.vanessa { color: #fdc5fb; font-weight: bold; }
+.spyder { color: #a2f4ff; font-weight: bold; }
+.wayne { color: #fdfdbd; font-weight: bold; }
+.athena { color: #ffd966; font-style: italic; font-weight: bold; }
+.fred { color: #90f5d5; font-style: italic; font-weight: bold; }
+.client { color: #ffa07a; font-weight: bold; }
+
+.label {
+  color: #89e0d0;
+  font-weight: bold;
+}
+
+.dialogue {
+  font-style: italic;
+  margin-top: 5px;
+}
+
+.note {
+  color: #b9dfdf;
+}
+
+.action {
+  color: #cccccc;
+  font-style: italic;
+  margin: 10px 0;
+}
+
+/* Portal Mapper visuals */
+.img-sim {
+  border-radius: 8px;
+  box-shadow: 0 0 10px #00ffee55;
+  margin-top: 10px;
+}
