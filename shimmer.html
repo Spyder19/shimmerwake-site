@@ -1,117 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>✨ The Shimmer</title>
+  <meta charset="UTF-8" />
+  <title>The Shimmer</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@1,400;1,600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Newsreader:ital,wght@0,400;1,600&display=swap');
 
     body {
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(180deg, #02040a 0%, #0f192b 100%);
-      color: #e0f9ff;
+      background: radial-gradient(ellipse at center, #0b0f19 0%, #01030a 100%);
+      color: #daf4ff;
       font-family: 'Newsreader', serif;
       line-height: 1.8;
-      padding: 60px 20px;
+      padding: 60px 24px;
       max-width: 800px;
       margin: auto;
     }
 
     h1 {
-      font-size: 3em;
+      font-family: 'Cinzel Decorative', cursive;
+      font-size: 3.5em;
       text-align: center;
-      color: #c8e7ff;
-      text-shadow: 0 0 10px #88f;
-      margin-bottom: 30px;
-    }
-
-    .shimmer-text {
-      background: linear-gradient(to right, #b3f6ff, #ddccff, #80e6ff);
+      margin-bottom: 40px;
+      background: linear-gradient(90deg, #88f, #fff 40%, #8ff);
+      background-size: 400% auto;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      font-weight: bold;
-      animation: shimmer 5s infinite alternate;
+      animation: shimmer 6s linear infinite alternate;
     }
 
     @keyframes shimmer {
-      0% {
-        background-position: 0% 50%;
-      }
-      100% {
-        background-position: 100% 50%;
-      }
+      0% { background-position: 0% center; }
+      100% { background-position: 100% center; }
     }
 
-    .block {
-      margin-bottom: 2.2rem;
+    .entry {
+      margin-bottom: 1.8rem;
+    }
+
+    .log-id {
+      font-weight: bold;
+      color: #72d1ff;
+      font-family: monospace;
     }
 
     .quote {
       font-style: italic;
-      color: #aadfef;
-      border-left: 3px solid #6bb9f0;
-      padding-left: 15px;
+      border-left: 3px solid #88c;
+      padding-left: 16px;
+      color: #bfefff;
     }
 
-    .footer {
-      margin-top: 60px;
-      font-size: 0.9em;
-      color: #7aa5c2;
+    footer {
       text-align: center;
+      font-size: 0.9rem;
+      color: #88a;
+      margin-top: 60px;
+    }
+
+    a {
+      color: #7cf;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
 
-  <h1><span class="shimmer-text">The Shimmer</span></h1>
+  <h1>The Shimmer</h1>
 
-  <div class="block">
-    The artifact vibrates, and a blue shimmer pulses across the water—like moonlight refracted through a diamond, soft, haunting, impossible to process. The surface bends. The ripples leave halos as if untouched by time.
+  <div class="entry">
+    The artifact vibrates, and a shimmering blue pulse travels across the water—like moonlight refracted through a crystal, soft, haunting, impossible to process.
   </div>
 
-  <div class="block">
-    <strong>1349</strong> — Champ slips through first, her bulk distorting the glow.
-  </div>
+  <div class="entry"><span class="log-id">1349</span> Champ slips through first, her bulk distorting the glow.</div>
+  <div class="entry"><span class="log-id">1350</span> The Dauntless glides in—not so much sailing as being drawn. Hull and crew ghost into the portal, vanishing before anyone can capture it. There's no sound. Only mist.</div>
+  <div class="entry"><span class="log-id">1352</span> A teenager captures the portal flicker on a cracked phone. The shimmer's already gone.</div>
 
-  <div class="block">
-    <strong>1350</strong> — The Dauntless glides in—not so much sailing as being drawn—hull and crew ghosting through the portal that vanishes almost before it’s registered. No sound but the gentle lap of waves.
-  </div>
+  <div class="entry quote">“The best departures make less noise than a yawn, trail fewer ripples than a lie, and leave behind only the shimmering possibility that maybe, just maybe, something wonderful passed this way.”</div>
 
-  <div class="block">
-    <strong>1352</strong> — A teenager, up too late or too early, blinks and fumbles her phone camera—capturing only a ring of light disappearing into mist.
-  </div>
+  <div class="entry"><span class="log-id">1443</span> Vanessa: "Tonight the world bent further than I expected."</div>
+  <div class="entry"><span class="log-id">1444</span> Played a binaural focus track over the boat PA—just to focus—but the crystal began to hum: bright, warm, weirdly harmonic.</div>
+  <div class="entry"><span class="log-id">1445</span> Mist hovered. The portal shimmered like a held breath.</div>
+  <div class="entry"><span class="log-id">1446</span> Champ responded—not with words, but intention. The feeling hit us like thunder behind the eyes: Help... Understand...</div>
 
-  <div class="block quote">
-    “The dark thing recoils. The crystal sings. The way is held stable just long enough. Sometimes the universe gives you what you need—a rock, a song, a stupid risk—if you’re weird enough to take it.”
-  </div>
+  <div class="entry quote">“It shimmered because it was real. It shimmered because maybe we were meant to feel it—not record it. Just remember it.”</div>
 
-  <div class="block">
-    <strong>1443</strong> — “Tonight the world bent,” wrote Vanessa, “further than I expected.”
-  </div>
+  <div class="entry"><span class="log-id">1434</span> The crystal flared. The song echoed. The Dauntless went through.</div>
+  <div class="entry"><span class="log-id">1436</span> Adamsian Reflection: “Sometimes the universe gives you what you need—a relic, a tone, a thick-headed crew—if you're just odd enough to take the leap.”</div>
 
-  <div class="block">
-    <strong>1444</strong> — Played a binaural track over the PA—more to steady my hands than to ward off evil. But the relic—crystal sealed in Arnold’s hull—began to hum. Bright. Hot.
-  </div>
+  <footer>✨ Written from the logs of the Dauntless. Powered by shimmer, music, and moderately controlled chaos. | Designed for dreamers who stay up too late.</footer>
 
-  <div class="block">
-    <strong>1445</strong> — Mist hovered; the portal reacted. It felt like the air would snap.
-  </div>
-
-  <div class="block">
-    <strong>1446</strong> — Vanessa felt it first. Champ responded—not with words, but with hope, and a need that struck bone-deep.
-  </div>
-
-  <div class="block">
-    <strong>580</strong> — Champ, the great monster, surfaced—not hostile, just old. Older than wheel and map and the word “old.”
-  </div>
-
-  <div class="block">
-    <strong>584</strong> — “Help,” said Vanessa. “And… to be understood.”
-  </div>
-
-  <div class="block footer">
-    This moment brought to you by relics, harmonics, quantum stupidity, a lake monster, one too-curious crew, and something waiting beyond the veil.
-  </div>
 </body>
 </html>
