@@ -1,121 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Recovered Log: Dauntless</title>
+  <meta charset="UTF-8">
+  <title>Dauntless Log Archives</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;1,600&family=Share+Tech+Mono&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Space+Mono&display=swap');
 
     body {
-      background: linear-gradient(to bottom, #01030a, #10161f);
-      color: #cfefff;
-      font-family: 'Newsreader', serif;
-      padding: 60px 30px;
-      max-width: 850px;
-      margin: auto;
-      line-height: 1.75;
+      background: #0a0e14;
+      color: #c3d7ef;
+      font-family: 'Space Mono', monospace;
+      margin: 2em;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      border-left: 4px solid #2f6b85;
+      padding-left: 2em;
     }
 
     h1 {
-      text-align: center;
       font-family: 'Share Tech Mono', monospace;
-      font-size: 2em;
-      letter-spacing: 0.1em;
-      color: #80dfff;
-      border-bottom: 1px solid #444;
-      padding-bottom: 10px;
-      margin-bottom: 40px;
+      color: #00ffff;
+      font-size: 2.5em;
+      text-shadow: 0 0 10px rgba(0,255,255,0.3);
+      margin-bottom: 1.5em;
     }
 
     .log-entry {
-      margin-bottom: 1rem;
+      margin: 2em 0;
+      padding: 1em;
+      background: rgba(18, 30, 46, 0.7);
+      border: 1px solid #2f6b85;
+      border-radius: 5px;
+      position: relative;
+    }
+
+    .log-entry:hover {
+      box-shadow: 0 0 15px rgba(47,107,133,0.5);
     }
 
     .log-id {
-      color: #78eaff;
+      color: #8ff;
       font-family: 'Share Tech Mono', monospace;
-      width: 60px;
-      display: inline-block;
-      font-weight: bold;
-    }
-
-    blockquote {
-      border-left: 3px solid #4ad;
-      margin-left: 0;
-      padding-left: 16px;
-      font-style: italic;
-      color: #bde0ff;
-    }
-
-    .section-break {
-      margin: 2em 0 1em;
-      font-size: 1.1em;
-      color: #8fffd7;
-      font-weight: bold;
-      border-top: 1px dashed #355;
-      padding-top: 10px;
-    }
-
-    footer {
-      margin-top: 50px;
-      color: #588;
       font-size: 0.9em;
-      text-align: center;
+      margin-bottom: 0.5em;
+    }
+
+    .character-tag {
+      position: absolute;
+      top: -0.8em;
+      right: 1em;
+      background: #12324e;
+      padding: 0.3em 0.8em;
+      border-radius: 3px;
+      font-size: 0.8em;
+      color: #8df;
+    }
+
+    .adam-note {
+      border-left: 3px solid #6b8f8f;
+      padding-left: 1em;
+      margin: 1.5em 0;
+      font-style: italic;
+      color: #9ab;
+    }
+
+    .portal-alert {
+      color: #ff6666;
+      animation: glitch 0.3s infinite;
+    }
+
+    @keyframes glitch {
+      0% { text-shadow: 0 0 5px red; }
+      50% { transform: skew(2deg); }
+      100% { text-shadow: none; }
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <h1>ATHENA DATABASE: DAUNTLESS CORE LOGS</h1>
 
-  <h1>-- DAUNTLESS RECOVERED LOG // ARCHIVE MODE --</h1>
+    <!-- Loch Ness Event Cluster -->
+    <div class="log-entry">
+      <div class="character-tag">SPYDER/VANESSA/WAYNE</div>
+      <div class="log-id">EVENT #CH-1527: Champ Response Protocol</div>
+      <p>"We just crossed an ocean in the wrong genre of boat. Also, I left my passport at home." <em>- Wayne</em></p>
+      <p>"Athena, give me a coordinate." <em>- Spyder</em></p>
+      <p class="portal-alert">"Stellar configuration confirms: Loch Ness, Scotland. Margin of error 1%. Local legend: present." <em>- Athena</em></p>
+    </div>
 
-  <div class="section-break">Vanessa’s Debrief</div>
-  <div class="log-entry"><span class="log-id">1322</span>I kept thinking—if Champ can smile, she was smiling tonight.</div>
-  <div class="log-entry"><span class="log-id">1323</span>I felt her pride; her fear. Got the crowd to clap, got the monster to come. But this was only practice.</div>
-  <div class="log-entry"><span class="log-id">1324</span>The shadow at the door.</div>
+    <!-- Mystery Crystal Protocol -->
+    <div class="log-entry">
+      <div class="character-tag">CRYSTAL-OMEGA</div>
+      <div class="log-id">ARTIFACT #XK-1400</div>
+      <p>"New protocol added: Crystal-Harmonic Portal Jammer. Request improved musical curation." <em>- Athena</em></p>
+      <p>"Sometimes the thin line between disaster and triumph is a humming stone." <em>- Narrator</em></p>
+    </div>
 
-  <blockquote>“An experiment begins when the robot asks, ‘Are you sure this is a good idea?’ and nobody listens.”</blockquote>
+    <!-- Crew Philosophy -->
+    <div class="adam-note">
+      "Not every question gets an answer. Not every myth stays in the dark. You follow a monster through an impossible door, aim a camera at the void, and..."<br>
+      <span style="color: #8ff">[CLASSIFIED - ATHENA PROTOCOLS REDACTED]</span>
+    </div>
 
-  <div class="section-break">Spyder’s Advice</div>
-  <div class="log-entry"><span class="log-id">1317</span>Crowd control tip: give kids a selfie—they’ll believe anything.</div>
-  <div class="log-entry"><span class="log-id">1318</span>Maintenance: hydrophone cables secure, artifact pulsing like a disco ball.</div>
-  <div class="log-entry"><span class="log-id">1319</span>The hard part comes next.</div>
-  <div class="log-entry"><span class="log-id">1320</span>Pie supply low—morale at risk.</div>
+    <!-- Portal Mechanics -->
+    <div class="log-entry">
+      <div class="character-tag">NAVIGATION</div>
+      <div class="log-id">PORTAL ENTRY #1126</div>
+      <p>"Most navigators care where they are. Here, the question is less 'where' than 'when do we stop gawking and start telling the folks back home?'"</p>
+      <p>"Captain, when the story seems impossible, check the stars twice." <em>- Athena</em></p>
+    </div>
 
-  <div class="section-break">Adamsian Note</div>
-  <div class="log-entry"><span class="log-id">1036</span>If FRED said it, you can bet it actually happened—possibly to the tune of a Klingon drinking song.</div>
-  <div class="log-entry"><span class="log-id">1040</span>No training prepares you for when your wildest stories come true—especially the ones you never meant to tell.</div>
+    <!-- Local Impact Report -->
+    <div class="log-entry">
+      <div class="character-tag">OBSERVATION</div>
+      <div class="log-id">FILE#1206-1210</div>
+      <p>"Tourists report weird wakes. Crew oscillates between discovery/disaster cycles (mean interval: 53 minutes)."</p>
+      <p>"Local pub arguments ongoing re: latest 'footage'. Recommendation: Deploy FRED for beverage diplomacy."</p>
+    </div>
 
-  <div class="section-break">FRED’s Launch</div>
-  <div class="log-entry"><span class="log-id">792</span>Spyder stood at the helm, tether in one hand, remote in the other.</div>
-  <div class="log-entry"><span class="log-id">793</span>“Alright, FRED. Time to earn your keep.”</div>
-  <div class="log-entry"><span class="log-id">795</span>With a whir, FRED slipped into the water. The tether unspooled. We watched the feed. The portal shimmered. Nobody breathed.</div>
-
-  <div class="section-break">Arrival</div>
-  <div class="log-entry"><span class="log-id">1469</span>Emerging, dry, intact… but surrounded by land that smells of peat, sheep, and disbelief.</div>
-  <div class="log-entry"><span class="log-id">1470</span>Confirmed: we’re in Loch Ness.</div>
-  <div class="log-entry"><span class="log-id">1471</span>Double-confirmed: nobody knows how to explain this to the Coast Guard, a consulate, or a therapist.</div>
-
-  <blockquote>“Galaxy’s OK’est Engineer.” — Spyder, warming his hands on a chipped mug</blockquote>
-
-  <div class="section-break">Champ</div>
-  <div class="log-entry"><span class="log-id">1480</span>Champ’s scared but stubborn. She… “trusts” us. Or something close.</div>
-  <div class="log-entry"><span class="log-id">1481</span>Can’t really sleep. Too many dreams. Too many questions.</div>
-
-  <div class="section-break">Portal Activation</div>
-  <div class="log-entry"><span class="log-id">1443</span>“Tonight the world bent further than I expected.” —Vanessa</div>
-  <div class="log-entry"><span class="log-id">1444</span>Played a binaural focus track over the speakers. More to steady my hands than scare monsters. But the relic—the crystal—hummed.</div>
-  <div class="log-entry"><span class="log-id">1445</span>The mist hovered. The portal shimmered. Felt like the air would snap.</div>
-  <div class="log-entry"><span class="log-id">1446</span>Champ responded—not with noise, but with need. Not words. Just fear… and hope.</div>
-
-  <div class="section-break">Aftermath</div>
-  <div class="log-entry"><span class="log-id">1650</span>Still can’t believe we pulled it off with the real monster. Feels like cheating at poker with the only winning hand.</div>
-  <div class="log-entry"><span class="log-id">1651</span>No injuries. One mildly offended sheep.</div>
-  <div class="log-entry"><span class="log-id">1652</span>Everyone’s laughing. But Champ's smile—half thank-you, half warning.</div>
-  <div class="log-entry"><span class="log-id">1654</span>Tonight we celebrate. Tomorrow? We guard the portal for real.</div>
-
-  <footer>
-    Recovered from Dauntless // For reference use only // Fragment 3 of 11 //
-  </footer>
-
+  </div>
 </body>
 </html>
