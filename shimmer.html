@@ -2,92 +2,139 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>The Shimmer</title>
+  <title>The Shimmer: Dauntless Archive</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Newsreader:ital,wght@0,400;1,600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Newsreader:ital,wght@0,400;1,600&display=swap');
 
     body {
-      background: radial-gradient(ellipse at center, #0b0f19 0%, #01030a 100%);
-      color: #daf4ff;
+      margin: 0;
+      padding: 40px 20px;
       font-family: 'Newsreader', serif;
-      line-height: 1.8;
-      padding: 60px 24px;
+      background: radial-gradient(ellipse farthest-corner at top, #0b0f1e, #01030a);
+      color: #d8f4ff;
       max-width: 800px;
       margin: auto;
+      line-height: 1.8;
     }
 
     h1 {
       font-family: 'Cinzel Decorative', cursive;
-      font-size: 3.5em;
+      font-size: 3.2em;
       text-align: center;
-      margin-bottom: 40px;
-      background: linear-gradient(90deg, #88f, #fff 40%, #8ff);
-      background-size: 400% auto;
+      background: linear-gradient(90deg, #a1ecff, #ffffff, #a1ecff);
+      background-size: 600% auto;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      animation: shimmer 6s linear infinite alternate;
+      animation: shimmer 5s infinite ease-in-out;
+      margin-bottom: 40px;
     }
 
     @keyframes shimmer {
-      0% { background-position: 0% center; }
-      100% { background-position: 100% center; }
+      0% {
+        background-position: 0% 50%;
+      }
+      100% {
+        background-position: 100% 50%;
+      }
     }
 
     .entry {
-      margin-bottom: 1.8rem;
+      margin-bottom: 1rem;
     }
 
     .log-id {
-      font-weight: bold;
-      color: #72d1ff;
       font-family: monospace;
+      font-weight: bold;
+      color: #72e0ff;
+      display: inline-block;
+      width: 70px;
     }
 
-    .quote {
+    blockquote {
+      border-left: 4px solid #5ef;
+      padding-left: 1em;
       font-style: italic;
-      border-left: 3px solid #88c;
-      padding-left: 16px;
-      color: #bfefff;
+      color: #c8eaff;
+      margin-left: 0;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .section-title {
+      font-size: 1.4em;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      color: #9eeeff;
     }
 
     footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #88a;
       margin-top: 60px;
+      font-size: 0.9em;
+      color: #7ab;
+      text-align: center;
     }
 
-    a {
-      color: #7cf;
-      text-decoration: none;
-    }
   </style>
 </head>
 <body>
 
   <h1>The Shimmer</h1>
 
-  <div class="entry">
-    The artifact vibrates, and a shimmering blue pulse travels across the water—like moonlight refracted through a crystal, soft, haunting, impossible to process.
-  </div>
+  <div class="entry"><strong>Step One:</strong> Get bearings.</div>
+  <div class="entry"><strong>Step Two:</strong> Accept the rulebook is gone.</div>
 
-  <div class="entry"><span class="log-id">1349</span> Champ slips through first, her bulk distorting the glow.</div>
-  <div class="entry"><span class="log-id">1350</span> The Dauntless glides in—not so much sailing as being drawn. Hull and crew ghost into the portal, vanishing before anyone can capture it. There's no sound. Only mist.</div>
-  <div class="entry"><span class="log-id">1352</span> A teenager captures the portal flicker on a cracked phone. The shimmer's already gone.</div>
+  <div class="section-title">🛠 Wayne’s Supplemental</div>
+  <div class="entry"><span class="log-id">1475</span>Wayne’s Supplemental:</div>
+  <div class="entry"><span class="log-id">1476</span>FRED: 100% functional. Boat: 95%. Dignity: we’ll get back to you.</div>
+  <div class="entry"><span class="log-id">1477</span>Scotland looks just like the movies, except now I’m starring in the wrong genre.</div>
+  <div class="entry"><span class="log-id">1478</span>Tether—too short. Next time: bring more cable, fewer assumptions.</div>
 
-  <div class="entry quote">“The best departures make less noise than a yawn, trail fewer ripples than a lie, and leave behind only the shimmering possibility that maybe, just maybe, something wonderful passed this way.”</div>
+  <div class="section-title">📓 Vanessa’s Log</div>
+  <div class="entry"><span class="log-id">1480</span> Champ’s scared but stubborn. She “trusts” us, or something like trust.</div>
+  <div class="entry"><span class="log-id">1481</span> I can’t really sleep—too many dreams, too many worries.</div>
+  <div class="entry"><span class="log-id">1482</span> The end, Dauntless skipped across the lake like a kid’s rock—and then we really skipped. Not sure we broke the laws of physics, but we did violate several lake safety pamphlets.</div>
 
-  <div class="entry"><span class="log-id">1443</span> Vanessa: "Tonight the world bent further than I expected."</div>
-  <div class="entry"><span class="log-id">1444</span> Played a binaural focus track over the boat PA—just to focus—but the crystal began to hum: bright, warm, weirdly harmonic.</div>
-  <div class="entry"><span class="log-id">1445</span> Mist hovered. The portal shimmered like a held breath.</div>
-  <div class="entry"><span class="log-id">1446</span> Champ responded—not with words, but intention. The feeling hit us like thunder behind the eyes: Help... Understand...</div>
+  <blockquote>Not sure what we’ll find next, but for now: We just flew.</blockquote>
 
-  <div class="entry quote">“It shimmered because it was real. It shimmered because maybe we were meant to feel it—not record it. Just remember it.”</div>
+  <div class="entry"><span class="log-id">521</span> I’d write my mother, but she never believed my stories anyway.</div>
 
-  <div class="entry"><span class="log-id">1434</span> The crystal flared. The song echoed. The Dauntless went through.</div>
-  <div class="entry"><span class="log-id">1436</span> Adamsian Reflection: “Sometimes the universe gives you what you need—a relic, a tone, a thick-headed crew—if you're just odd enough to take the leap.”</div>
+  <div class="section-title">⚙️ Engineering</div>
+  <div class="entry"><span class="log-id">525</span> Hydrofoils work. Should’ve gotten hazard pay.</div>
+  <div class="entry"><span class="log-id">526</span> Spyder’s still grinning. Vanessa threatened to tie us both down if we try that again without notes.</div>
 
-  <footer>✨ Written from the logs of the Dauntless. Powered by shimmer, music, and moderately controlled chaos. | Designed for dreamers who stay up too late.</footer>
+  <div class="section-title">📐 Adamsian Note</div>
+  <div class="entry"><span class="log-id">1036</span> In the Dauntless log, if FRED said it, you can bet it actually happened—possibly to the tune of a Klingon drinking song in the background.</div>
+  <div class="entry"><span class="log-id">1040</span> No training, chart, or GPS prepares you for the moment all your wildest stories come true. Especially the ones you never meant to write.</div>
+
+  <div class="section-title">🎭 Spyder vs Client</div>
+  <div class="entry"><span class="log-id">674</span> Client (leaning in, smug): “You’ll follow my instructions to the letter. You screw this up, and there will be consequences. Understood?”</div>
+  <div class="entry"><span class="log-id">678</span> Spyder (leaning back, grinning): “Yeah, about that—let’s get one thing straight.”</div>
+  <div class="entry"><span class="log-id">683</span> Spyder: “The only reason I take your ‘suggestions’ is because I agreed to take your money. That’s it. You don’t own me.”</div>
+
+  <div class="section-title">🌀 Portal Fallout</div>
+  <div class="entry"><span class="log-id">933</span> Note to self: In future, test all portals with a detachable tether.</div>
+  <div class="entry"><span class="log-id">934</span> FRED survived, boat survived, my dignity did not.</div>
+  <div class="entry"><span class="log-id">935</span> Sheep now believe we're time travelers.</div>
+  <div class="entry"><span class="log-id">938</span> Somehow ended up in Scotland because we tied FRED to the boat.</div>
+
+  <div class="section-title">💧 Champ's Response</div>
+  <div class="entry"><span class="log-id">1527</span> Maybe as Spyder uses her true name, Champ dips her head, tracing a gleaming swirl in the water—a silent answer, an “I see you too.”</div>
+
+  <div class="section-title">🥧 Pie Diplomacy</div>
+  <div class="entry"><span class="log-id">307</span> Right then, the pie parade began—steaming, copious, and gloriously free.</div>
+  <blockquote>Forks raised in temporary, sticky truce.</blockquote>
+  <div class="entry"><span class="log-id">315</span> Wayne, shaking his head as the lock cleared: “Are you ever going to explain how you do that?”</div>
+  <div class="entry"><span class="log-id">317</span> Spyder, grinning, plots a new GPS coordinate. “It’s pre-trained and responds to bagpipes.”</div>
+
+  <div class="section-title">📸 Vanessa's Debrief</div>
+  <div class="entry"><span class="log-id">1322</span> I kept thinking—if Champ can smile, she was smiling tonight.</div>
+  <div class="entry"><span class="log-id">1323</span> I felt her pride; I felt her fear. Got the crowd to clap, got the monster to come, but this was only practice.</div>
+
+  <blockquote>The shadow at the door. The shimmer. The leap.</blockquote>
+
+  <footer>
+    ✨ Dauntless Archive | Myth meets malfunction, powered by laughter, tethered to truth.
+  </footer>
 
 </body>
 </html>
