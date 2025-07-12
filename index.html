@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Welcome to The Dauntless Archive</title>
+  <title>The Dauntless Archive</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;1,600&family=Share+Tech+Mono&display=swap');
 
     body {
-      background: radial-gradient(ellipse at top, #03111c, #010409);
+      background: radial-gradient(ellipse at top, #021018, #000);
       color: #dffbff;
       font-family: 'Newsreader', serif;
       text-align: center;
-      padding: 5em 2em;
+      padding: 4em 2em;
       line-height: 1.8;
     }
 
@@ -21,19 +21,40 @@
       color: #8ff;
       text-transform: uppercase;
       letter-spacing: 0.1em;
-      margin-bottom: 1em;
+      margin-top: 1em;
+      margin-bottom: 0.5em;
     }
 
-    p.intro {
+    .gif-container {
+      width: 260px;
+      height: auto;
+      margin: 0 auto 20px;
+    }
+
+    .gif-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
+    }
+
+    .intro {
       max-width: 750px;
-      margin: 0 auto 2.5em;
+      margin: 2em auto;
       color: #aeeaff;
       font-style: italic;
     }
 
+    .quote {
+      color: #8df;
+      font-family: 'Share Tech Mono', monospace;
+      margin-top: 1em;
+      font-size: 1em;
+    }
+
     .link-box {
       max-width: 500px;
-      margin: 0 auto;
+      margin: 3em auto 0;
       display: flex;
       flex-direction: column;
       gap: 1em;
@@ -42,19 +63,19 @@
     a.page-link {
       display: block;
       color: #ffffff;
-      background: #12324e;
+      background: #0f2b3e;
       border: 2px solid #2f6b85;
       padding: 1em;
       font-family: 'Share Tech Mono', monospace;
-      font-size: 1.1em;
+      font-size: 1.05em;
       text-decoration: none;
       border-radius: 8px;
-      transition: background 0.3s, transform 0.2s;
+      transition: background 0.3s, transform 0.25s;
     }
 
     a.page-link:hover {
       background: #1c456b;
-      transform: scale(1.03);
+      transform: scale(1.04);
     }
 
     footer {
@@ -66,23 +87,32 @@
 </head>
 <body>
 
+  <div class="gif-container">
+    <img src="spinningshuttle.gif" alt="Spinning Dauntless Shuttlecraft">
+  </div>
+
   <h1>The Dauntless Archive</h1>
 
   <p class="intro">
-    Intercepted logs. Shimmering portals. Impossible destinations.<br>
-    This is not just a boat. And these aren't just rumors.
+    She looks like a pontoon boat with warp nacelles—and sounds like a conspiracy theorist with engineering credentials.<br>
+    They said it was a mockumentary. They said it was a stunt.<br>
+    And then Nessie showed up on cue.
   </p>
 
+  <div class="quote">“Not quite. We're here for a myth, monsters, and science fiction. Tourists love it.” — Spyder</div>
+
   <div class="link-box">
-    <a class="page-link" href="shimmer.html">📡 Enter "The Shimmer" →</a>
-    <a class="page-link" href="log-archive.html">📘 Recovered Logs (Dauntless Entry Points)</a>
+    <a class="page-link" href="shimmer.html">✨ Enter the Shimmer</a>
+    <a class="page-link" href="log-archive.html">📘 View Recovered Logs</a>
     <a class="page-link" href="#">🎭 Character Files (Coming Soon)</a>
-    <a class="page-link" href="#">🗺️ Portal Lore & Anomalies (Coming Soon)</a>
-    <a class="page-link" href="#">🎙️ Audio Debriefs (Under Review)</a>
+    <a class="page-link" href="#">📡 Portal Experiments (Classified)</a>
+    <a class="page-link" href="#">🎙️ Crew Debriefs (Under Review)</a>
   </div>
 
   <footer>
-    Dauntless Archive // Echo-Class Multi-Site Portal Record // Clearance Level: 3B
+    Recovered Node: Athena-3<br>
+    Clearance: SciFi / Pseudohistory Level 2B<br>
+    “It's not a hoax if it breaks the sound barrier.”
   </footer>
 
 </body>
