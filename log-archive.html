@@ -1,187 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Dauntless Log Archive</title>
+  <meta charset="UTF-8">
+  <title>Dauntless Official Logs</title>
   <style>
     body {
-      background: #0c1119;
-      color: #d0f0ff;
-      font-family: 'Courier New', Courier, monospace;
-      line-height: 1.7;
-      margin: 3em auto;
-      max-width: 900px;
+      background: #0a111f;
+      color: #d0e4ff;
+      font-family: 'Courier New', monospace;
+      line-height: 1.6;
+      margin: 2em auto;
+      max-width: 800px;
       padding: 0 1em;
     }
 
-    h1 {
-      text-align: center;
-      color: #00ffff;
-      font-size: 2.4em;
-      margin-bottom: 1em;
-      text-shadow: 0 0 8px #0ff;
-    }
-
     .log-entry {
-      background-color: #141b29;
+      border-left: 4px solid #007acc;
       padding: 1em;
-      border-left: 4px solid #2e94b9;
-      margin-bottom: 1.5em;
-      border-radius: 5px;
+      margin: 1.5em 0;
+      background: rgba(0,30,60,0.2);
     }
 
-    .log-num {
+    .log-range {
+      color: #00a8ff;
       font-weight: bold;
-      color: #7de8ff;
-      margin-bottom: 0.3em;
-      display: block;
+      margin-bottom: 0.5em;
+    }
+
+    .log-source {
+      color: #88ffd7;
+      font-size: 0.9em;
+      margin: 0.3em 0;
     }
 
     pre {
       white-space: pre-wrap;
-      color: #cceeff;
-    }
-
-    footer {
-      margin-top: 4em;
-      text-align: center;
-      font-size: 0.9em;
-      color: #678;
+      margin: 0;
     }
   </style>
 </head>
 <body>
 
-  <h1>ATHENA FILE NODE: LOG RECONSTRUCTION</h1>
-  <p style="text-align: center">Recovered experiment and crew logs. Integrity: Fragmented. Order: Non-Linear. Meaning: Derive your own.</p>
+<div class="log-entry">
+  <div class="log-range">117-122</div>
+  <pre>• Missions on The Great Loop:
+- Probing under canal-gate hinges for wear
+- Diving beneath winter icefields on Lake Ontario
+- Scanning submerged lock-mechanisms for stress fractures
+- (If legends prove true) sniffing out energy signatures
 
-  <!-- LOG SET 117–122 -->
-  <div class="log-entry">
-    <span class="log-num">117–122</span>
-    <pre>• Missions on The Great Loop:
-– Probing under canal-gate hinges for wear
-– Diving beneath winter icefields on Lake Ontario
-– Scanning submerged lock-mechanisms for stress fractures
-– (If legends prove true) sniffing out energy signatures
-
-• Hybrid thrusters: whisper-quiet electric mode for canals; bio-diesel boost for open water
+• Hybrid thrusters: whisper-quiet electric mode for canals
 • Emergency Sprint: 30-second 12-knot dash via capacitive power banks
 • Solar Fold-outs: [data corrupted]</pre>
-  </div>
+</div>
 
-  <!-- LOG SET 489–492 -->
-  <div class="log-entry">
-    <span class="log-num">489–492</span>
-    <pre>FRED holds parts steady, its electric whirr underscoring half the build. (“FRED, clamp. FRED, hold. FRED, no, not that lever—good robot.”)
+<div class="log-entry">
+  <div class="log-range">489-492</div>
+  <div class="log-source">Engineering Log</div>
+  <pre>FRED holds parts steady ("FRED, clamp. FRED, hold. FRED, no, not that lever—good robot.")
+Splicing recycled 10 gauge wire to relay box
+Athena rewires diagnostics: "Performance: Reckless"</pre>
+</div>
 
-Spyder splices recycled 10 gauge wire to a relay box, mapping signals from helm controls to Athena’s new “WING CONTROL” software module. (“Let’s hope your coding’s better than your hash browns.”)
+<div class="log-entry">
+  <div class="log-range">931-936</div>
+  <div class="log-source">Wayne's Supplemental</div>
+  <pre>Conclusion: Be careful what you tie to your home
+Note: Test portals with detachable tether
+FRED survived, dignity did not
+Sheep believe we're time travelers
+Athena note: "First successful robo-tow to another continent"</pre>
+</div>
 
-Athena scolds them for using repurposed machine screws, then quietly rewires her own diagnostics for “Performance: Reckless.”</pre>
-  </div>
+<div class="log-entry">
+  <div class="log-range">937-939</div>
+  <div class="log-source">Vanessa's Log</div>
+  <pre>Arrived Scotland via FRED-tether incident
+Atmosphere: Medieval castle ruins
+Protocol: Athena piping binaural beats through hull</pre>
+</div>
 
-  <!-- LOG SET 931–936 -->
-  <div class="log-entry">
-    <span class="log-num">931–936</span>
-    <pre>Conclusion: Be careful what you tie to your home.
+<div class="log-entry">
+  <div class="log-range">1206-1214</div>
+  <div class="log-source">Local Impact Report</div>
+  <pre>Tourists report weird wakes/shadows
+Pub arguments about "latest" footage
+Odd storms preceding portal event
+[restricted: security level gamma]</pre>
+</div>
 
-Wayne’s Supplemental:
-Note to self: In future, test all portals with a detachable tether.
+<div class="log-entry">
+  <div class="log-range">1228-1235</div>
+  <div class="log-source">Public Relations Log</div>
+  <pre>Local TV report: "Close Encounters of Loch Kind"
+Dock observations: Tourists seek selfies
+Athena receives requests for "Scotty impression"</pre>
+</div>
 
-FRED survived, boat survived, my dignity did not.
+<div class="log-entry">
+  <div class="log-range">1256-1260</div>
+  <div class="log-source">Demonstration Protocol</div>
+  <pre>Vanessa stations at artifact interface
+Athena: "Activating Nessie demonstration protocol"
+Public skepticism metrics recorded</pre>
+</div>
 
-Sheep now believe we're time travelers.
+<div class="log-entry">
+  <div class="log-range">1443-1446</div>
+  <div class="log-source">Crystal Event</div>
+  <pre>Relic activation: Spark-plug crystal hums
+Portal structure instability detected
+Vanessa reports "need without words"</pre>
+</div>
 
-Athena marked the incident: “first successful robo-tow to another continent.”</pre>
-  </div>
-
-  <!-- LOG SET 937–939 -->
-  <div class="log-entry">
-    <span class="log-num">937–939</span>
-    <pre>Vanessa’s Log:
-Somehow ended up in Scotland because we tied FRED to the boat.
-
-The air smells amazing, there’s a medieval castle [data break] tands at the bow, hands on the artifact, Athena piping binaural beats through the hull.</pre>
-  </div>
-
-  <!-- LOG SET 1206–1214 -->
-  <div class="log-entry">
-    <span class="log-num">1206–1214</span>
-    <pre>Her logs are now as much part of Dauntless lore as the crew’s.
-
-6. Local Impact (Mundane Meets Mythic):
-Tourists keep seeing weird wakes or shadows.
-
-There’s a running argument at a local pub about the “latest” bit of footage.
-
-The crew is always on the edge of discovery/disaster—sometimes both in the same hour.
-
-7. The Threat Grows:
-As the birth/portal approaches, tension builds.
-
-Odd storms, chills, and strange boat failures.
-
-Locals [corrupted text]</pre>
-  </div>
-
-  <!-- LOG SET 1228–1235 -->
-  <div class="log-entry">
-    <span class="log-num">1228–1235</span>
-    <pre>Local TV sends a reporter who opens with,
-“Well, Fiona, you could call it Close Encounters of the Loch Kind…”
-
-On the dock:
-Old men shake their heads, mutter about “the end times” and “too much American television.”
-
-Tourists want selfies with the shuttlecraft maniac-pirates.
-
-Kids try to get Athena to talk like Scotty.
-
-Spyder, climbing out, stretches, takes a swig of coffee, and surveys the growing crowd.</pre>
-  </div>
-
-  <!-- LOG SET 1256–1260 -->
-  <div class="log-entry">
-    <span class="log-num">1256–1260</span>
-    <pre>Vanessa stands at the bow, hands on the artifact, Athena piping binaural beats through the hull.
-
-Athena, announcing with a flourish:
-“Activating Nessie demonstration protocol. Please keep all hands and smartphones inside the safety area.”
-
-A few skeptical laughs, some camera shutters clicking, a child waving a Nessie plushie from the dock.
-
-Vanessa closes her eyes, focusing on Champ—not with a [data error]</pre>
-  </div>
-
-  <!-- LOG SET 1443–1446 -->
-  <div class="log-entry">
-    <span class="log-num">1443–1446</span>
-    <pre>Tonight the world bent further than I expected.
-
-Played a binaural focus track over the boat PA, more to steady my hands than to ward off evil.
-Didn’t mean anything by it.
-
-But the relic—crystal set like a spark plug in a piece of Arnold’s old hull—started to hum. Bright. Hot.
-
-Mist hovered; the portal shivered.
-For a moment, it felt like the air could snap in half.
-
-Vanessa felt it first. Champ wanted us to do something, but words never came—only fear, need, hope.</pre>
-  </div>
-
-  <!-- LOG SET 1621–1624 -->
-  <div class="log-entry">
-    <span class="log-num">1621–1624</span>
-    <pre>Athena, announcing with a flourish:
-“Activating Nessie demonstration protocol. Please keep all hands and smartphones inside the safety area.”
-
-A few skeptical laughs, some camera shutters clicking, a child waving a Nessie plushie from the dock.
-
-Vanessa closes her eyes, focusing on Champ—not with a remote, but through harmonics, artifact, and a nervous surge of 'please let this work.'</pre>
-  </div>
-
-<footer>
-  <p>Archived by Athena. Semantic labels pending. Fragments marked UNKNOWN are under review.</p>
-</footer>
+<div class="log-entry">
+  <div class="log-range">1621-1624</div>
+  <div class="log-source">Nessie Protocol</div>
+  <pre>Athena initiates demonstration phase
+Public skepticism metrics:54% initially
+Focus shift to harmonic artifacts</pre>
+</div>
 
 </body>
 </html>
