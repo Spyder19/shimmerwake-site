@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>K9 Control Test Page</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      background-color: #101820;
+      color: #FEE715;
+      padding: 40px;
+    }
+    button {
+      font-size: 16px;
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      background-color: #FEE715;
+      color: #101820;
+      cursor: pointer;
+    }
+    #log {
+      margin-top: 30px;
+      padding: 10px;
+      border: 1px solid #FEE715;
+      background: #1C1C1C;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .camera {
+      width: 400px;
+      height: 300px;
+      background-color: #333;
+      margin: 0 auto 20px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #888;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>K9 Field Controller</h1>
+
+  <div class="camera">[ Camera Feed Here ]</div>
+
+  <div>
+    <button onclick="sendCommand('Forward')">Forward</button>
+    <button onclick="sendCommand('Backward')">Backward</button>
+    <button onclick="sendCommand('Left')">Left</button>
+    <button onclick="sendCommand('Right')">Right</button>
+    <button onclick="sendCommand('Stop')">Stop</button>
+  </div>
+
+  <div id="log">
+    <h3>Command Log:</h3>
+    <div id="entries"></div>
+  </div>
+
+  <script>
+    function sendCommand(cmd) {
+      const log = document.getElementById("entries");
+      const entry = document.createElement("p");
+      entry.textContent = `Dipshit received command: ${cmd}`;
+      log.appendChild(entry);
+      console.log(`Dipshit executed: ${cmd}`);
+    }
+  </script>
+
+</body>
+</html>
