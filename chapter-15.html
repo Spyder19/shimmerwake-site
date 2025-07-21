@@ -49,25 +49,24 @@ Every pie shop suggestion ("Captain, refreshment facility located 47.3 meters no
   <p style="font-size: 1.3em; font-weight: bold;">You made it.</p>
   <p style="font-size: 1.1em;">Now you’ve <em>earned</em> the right to rate this beast:</p>
 
-  <form action="https://formspree.io/f/movljgov" method="POST" style="margin-top: 20px;">
-    <label for="stars" style="font-weight: bold;">Your Rating:</label><br>
-    <select id="stars" name="stars" style="font-size: 1.2em; margin-top: 8px;">
-      <option value="5">⭐⭐⭐⭐⭐</option>
-      <option value="4">⭐⭐⭐⭐</option>
-      <option value="3">⭐⭐⭐</option>
-      <option value="2">⭐⭐</option>
-      <option value="1">⭐</option>
-    </select><br><br>
+  <form action="https://formspree.io/f/movljgov" method="POST">
+  <label for="stars">Your Rating:</label><br>
+  <select id="stars" name="stars">
+    <option value="5">⭐⭐⭐⭐⭐</option>
+    <option value="4">⭐⭐⭐⭐</option>
+    <option value="3">⭐⭐⭐</option>
+    <option value="2">⭐⭐</option>
+    <option value="1">⭐</option>
+  </select><br><br>
 
-    <label for="review" style="font-weight: bold;">Optional Comment:</label><br>
-    <textarea id="review" name="review" rows="5" cols="50" placeholder="Ex: Spyder’s mug earned that fifth star." style="margin-top: 8px;"></textarea><br><br>
+  <label for="review">Optional Comment:</label><br>
+  <textarea id="review" name="review" rows="4" cols="40" placeholder="Spyder’s mug earned that fifth star."></textarea><br><br>
 
-    <input type="email" name="email" placeholder="Your email (optional)" style="width: 60%; padding: 6px; font-size: 1em;"><br><br>
+  <label for="email">Your Email (optional):</label><br>
+  <input type="email" name="email" placeholder="you@galaxyfleet.net"><br><br>
 
-    <button type="submit" style="font-size: 1.1em; padding: 10px 20px; background-color: #222; color: #f5b301; border: none; border-radius: 6px; cursor: pointer;">
-      Submit Review
-    </button>
-  </form>
+  <button type="submit">Submit Review</button>
+</form>
 
   <p style="margin-top: 20px; font-style: italic; color: #888;">
     Review submitted. Athena has recorded your judgment. She's watching.
