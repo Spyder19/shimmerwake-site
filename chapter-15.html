@@ -45,13 +45,13 @@ She just became very, very good at finding "interesting sights" along the way to
 Every pie shop suggestion ("Captain, refreshment facility located 47.3 meters northeast"), every "scenic route," every "convenient" overnight anchorage - all calculated to keep them in the highest-probability zones for discovering the impossible.
 </p>
 
-<div class="rating-final" style="text-align: center; margin-top: 40px;">
-  <p style="font-size: 1.2em;">Finished the book?</p>
-  <p style="font-size: 1em;">Now you’ve *earned* the right to rate it:</p>
-  
-  <form>
-    <label for="stars">Your Rating:</label><br>
-    <select id="stars" name="stars">
+<div class="rating-final" style="text-align: center; margin-top: 40px; padding: 20px; border-top: 1px solid #444;">
+  <p style="font-size: 1.3em; font-weight: bold;">You made it.</p>
+  <p style="font-size: 1.1em;">Now you’ve *earned* the right to rate this beast:</p>
+
+  <form action="YOUR_REVIEW_HANDLER_URL" method="post" style="margin-top: 20px;">
+    <label for="stars" style="font-weight: bold;">Your Rating:</label><br>
+    <select id="stars" name="stars" style="font-size: 1.2em; margin-top: 8px;">
       <option value="5">⭐⭐⭐⭐⭐</option>
       <option value="4">⭐⭐⭐⭐</option>
       <option value="3">⭐⭐⭐</option>
@@ -59,11 +59,15 @@ Every pie shop suggestion ("Captain, refreshment facility located 47.3 meters no
       <option value="1">⭐</option>
     </select><br><br>
 
-    <label for="review">Optional Comment:</label><br>
-    <textarea id="review" name="review" rows="4" cols="40" placeholder="The Mudstang changed my life."></textarea><br><br>
+    <label for="review" style="font-weight: bold;">Optional Comment:</label><br>
+    <textarea id="review" name="review" rows="5" cols="50" placeholder="Ex: Spyder’s mug earned that fifth star." style="margin-top: 8px;"></textarea><br><br>
 
-    <input type="submit" value="Submit Review">
+    <input type="submit" value="Submit Review" style="font-size: 1.1em; padding: 10px 20px; background-color: #222; color: #f5b301; border: none; border-radius: 6px; cursor: pointer;">
   </form>
+
+  <p style="margin-top: 20px; font-style: italic; color: #888;">
+    Review submitted. Athena has recorded your judgment. She’s watching.
+  </p>
 </div>
 
 </body>
