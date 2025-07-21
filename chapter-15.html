@@ -47,9 +47,9 @@ Every pie shop suggestion ("Captain, refreshment facility located 47.3 meters no
 
 <div class="rating-final" style="text-align: center; margin-top: 40px; padding: 20px; border-top: 1px solid #444;">
   <p style="font-size: 1.3em; font-weight: bold;">You made it.</p>
-  <p style="font-size: 1.1em;">Now you’ve *earned* the right to rate this beast:</p>
+  <p style="font-size: 1.1em;">Now you’ve <em>earned</em> the right to rate this beast:</p>
 
-  <form action="YOUR_REVIEW_HANDLER_URL" method="post" style="margin-top: 20px;">
+  <form action="https://formspree.io/f/movljgov" method="POST" style="margin-top: 20px;">
     <label for="stars" style="font-weight: bold;">Your Rating:</label><br>
     <select id="stars" name="stars" style="font-size: 1.2em; margin-top: 8px;">
       <option value="5">⭐⭐⭐⭐⭐</option>
@@ -62,13 +62,16 @@ Every pie shop suggestion ("Captain, refreshment facility located 47.3 meters no
     <label for="review" style="font-weight: bold;">Optional Comment:</label><br>
     <textarea id="review" name="review" rows="5" cols="50" placeholder="Ex: Spyder’s mug earned that fifth star." style="margin-top: 8px;"></textarea><br><br>
 
-    <input type="submit" value="Submit Review" style="font-size: 1.1em; padding: 10px 20px; background-color: #222; color: #f5b301; border: none; border-radius: 6px; cursor: pointer;">
+    <input type="email" name="email" placeholder="Your email (optional)" style="width: 60%; padding: 6px; font-size: 1em;"><br><br>
+
+    <button type="submit" style="font-size: 1.1em; padding: 10px 20px; background-color: #222; color: #f5b301; border: none; border-radius: 6px; cursor: pointer;">
+      Submit Review
+    </button>
   </form>
 
   <p style="margin-top: 20px; font-style: italic; color: #888;">
-    Review submitted. Athena has recorded your judgment. She’s watching.
+    Review submitted. Athena has recorded your judgment. She's watching.
   </p>
 </div>
-
 </body>
 </html>
