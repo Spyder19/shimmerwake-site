@@ -116,3 +116,16 @@ body {
 .rating-final button[type="submit"]:hover {
   background-color: #009688;
 }
+
+.archive-link {
+  background-color: #263238;
+  color: #80deea;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-left: 1rem;
+  transition: background 0.3s ease;
+}
+
+.archive-link:hover {
+  background-color: #37474f;
+}
