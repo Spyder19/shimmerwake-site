@@ -129,3 +129,7 @@ body {
 .archive-link:hover {
   background-color: #37474f;
 }
+@keyframes pulse {
+  from { box-shadow: 0 0 8px #ff6f00; }
+  to { box-shadow: 0 0 16px #ffa726; }
+}
