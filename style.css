@@ -257,3 +257,51 @@ nav a:hover {
     display: none;
   }
 }
+/* Hover area styles */
+.hover-area {
+  width: 200px; /* Adjust size of hover area */
+  height: 200px;
+  position: relative;
+  background-color: transparent; /* Invisible but functional */
+  border: 1px dashed #94a3b8; /* Optional: Add a visible border for debugging */
+}
+
+.hover-area:hover .hover-hint {
+  opacity: 1;
+}
+
+.hover-hint {
+  font-size: 1rem;
+  color: #94a3b8; /* Subtle text color */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Prevent interaction with the text */
+}
+
+/* Navigation styles (Next button) */
+nav {
+  align-self: flex-end;
+  margin-right: 3em;
+  opacity: 0; /* Button starts invisible */
+  transition: opacity 0.5s ease;
+}
+
+.hover-area:hover + nav {
+  opacity: 1; /* Button fades in only when hover area is active */
+}
+
+nav a {
+  color: #fca5a5;
+  background-color: #334155;
+  padding: 0.6em 1.2em;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #475569;
+}
