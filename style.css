@@ -305,3 +305,11 @@ nav a {
 nav a:hover {
   background-color: #475569;
 }
+.hover-area {
+  all: unset;
+}
+
+.hover-hint {
+  all: unset;
+}
+
