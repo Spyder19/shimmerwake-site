@@ -306,6 +306,17 @@ nav a:hover {
   background-color: #475569;
 }
 .hover-area {
-  all: unset;
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
 }
 
+.hover-hint {
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  color: inherit;
+}
