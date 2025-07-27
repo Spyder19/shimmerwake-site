@@ -320,3 +320,24 @@ nav a:hover {
   font-size: inherit;
   color: inherit;
 }
+
+.terminal-box {
+  background-color: #000;           /* Black background */
+  padding: 1em;
+  border: 2px solid #0f0;           /* Neon green border */
+  font-family: 'Courier New', monospace;
+  color: #0f0;                      /* Green text */
+  box-shadow: 0 0 8px #0f0;         /* Glowy effect */
+  max-width: 75ch;
+  margin-top: 1em;
+}
+
+.terminal-box h4 {
+  color: #0f0;
+  margin-bottom: 0.5em;
+}
+
+.terminal-box pre {
+  white-space: pre-wrap;
+  margin: 0;
+}
