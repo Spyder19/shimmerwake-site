@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Athena Log Console</title>
+  <style>
+    body {
+      background-color: black;
+      color: #00FF00;
+      font-family: 'Courier New', Courier, monospace;
+      padding: 2rem;
+    }
+
+    #athena-log {
+      white-space: pre-wrap;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      border-left: 2px solid #00FF00;
+      padding-left: 1rem;
+    }
+
+    /* Optional: blinking cursor */
+    #cursor {
+      display: inline-block;
+      width: 10px;
+      background-color: #00FF00;
+      animation: blink 1s step-start infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <h1>ATHENA // Night Watch Log</h1>
+  <div id="athena-log"></div><span id="cursor"></span>
+
+  <script>
+    const logText = `Athena (AI Night Watch Report): All crew accounted for. Emergency hatch
+release mapped to Vanessa's pillow (for peace of mind). Next scheduled
+alarm: sunrise, or whenever I get bored.`;
+
+    let i = 0;
+    const speed = 50;
+
+    function typeLog() {
+      if (i < logText.length) {
+        document.getElementById("athena-log").textContent += logText.charAt(i);
+        i++;
+        setTimeout(typeLog, speed);
+      }
+    }
+
+    window.onload = typeLog;
+  </script>
+</body>
+</html>
