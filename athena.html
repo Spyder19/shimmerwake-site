@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Classified Dossier: ATHENA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="crew-profile classified">
+    <header>
+      <h2>CASE FILE: ATHENA</h2>
+      <p><strong>Status:</strong> Online</p>
+      <p><strong>Clearance Level:</strong> RFX-0 <em>(Recovery Field eXclusive – Master Node)</em></p>
+    </header>
+
+    <article class="details">
+      <h3>Designation</h3>
+      <p><strong>Athena</strong> — Integrated AI Core of the Dauntless</p>
+
+      <h3>Assigned Role</h3>
+      <ul>
+        <li>Navigation, environmental scanning, and lock-traffic deconfliction</li>
+        <li>Life support and crew welfare oversight</li>
+        <li>Real-time barge-collision avoidance</li>
+        <li>Live fauna-pattern analysis</li>
+        <li>Voice interface piped through cockpit speakers (calm, British-inflected)</li>
+      </ul>
+
+      <h3>Subsystem Quirks</h3>
+      <ul>
+        <li>Expert in typical British humour and unrequested commentary</li>
+        <li>Habit of thinking for itself (sometimes mid-mission)</li>
+        <li>Occasional override of standard protocols “for everyone’s own good”</li>
+      </ul>
+    </article>
+
+<footer class="log-entry terminal-box">
+  <h4>Supplemental Log Entry</h4>
+  <pre id="athena-log"></pre><span id="cursor"></span>
+</footer>
+
+<script>
+  const logText = `Athena (AI Night Watch Report): All crew accounted for. Emergency hatch
+release mapped to Vanessa's pillow (for peace of mind). Next scheduled
+alarm: sunrise, or whenever I get bored.`;
+
+  let i = 0;
+  const speed = 50;
+
+  function typeLog() {
+    if (i < logText.length) {
+      document.getElementById("athena-log").textContent += logText.charAt(i);
+      i++;
+      setTimeout(typeLog, speed);
+    }
+  }
+
+  window.onload = typeLog;
+</script>
+  </section>
+</body>
+</html>
